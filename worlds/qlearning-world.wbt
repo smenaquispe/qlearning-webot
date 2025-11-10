@@ -1,0 +1,66 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/solids/protos/SolidBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/balls/protos/Ball.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.7134936587501081 0.02437395415728084 0.7002376091600072 3.093763521514076
+  position -0.26997151688190574 -0.03073809050578019 2.632303361302096
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+DEF TARGET Ball {
+  hidden linearVelocity_0 -0.01485138390260004 -0.012012206024739853 -2.4384425555106513e-05
+  hidden angularVelocity_0 0.3681094936222949 -0.4551150218966378 8.147902298401036e-19
+  translation 0.08896157694974569 -0.07165999741014181 0.03241359810206308
+  rotation 0.20205971978924897 0.0777393692774794 0.9762829815699084 -2.529867535093884
+  name "Esfera1"
+  color 0 1 0
+}
+SolidBox {
+  translation -0.14 0 0.14
+  size 0.1 0.2 0.3
+}
+SolidBox {
+  translation -6.11772e-08 -0.23 0.14
+  rotation 0 0 1 -1.5707953071795862
+  name "box(1)"
+  size 0.1 0.2 0.3
+}
+SolidBox {
+  translation 0.28 -0.29 0.14
+  rotation 0 0 1 3.14159
+  name "box(2)"
+  size 0.1 0.2 0.3
+}
+SolidBox {
+  translation 0.21 0.32 0.14
+  rotation 0 0 1 3.14159
+  name "box(3)"
+  size 0.1 0.2 0.3
+}
+E-puck {
+  hidden position_0_0 792.8152746181589
+  hidden position_0_1 625.7830614502158
+  hidden translation_1 0 0.026000000000000034 0.02
+  hidden rotation_1 0 1 0 1.1339259135310276
+  hidden translation_2 0 -0.02599999999999999 0.02
+  hidden rotation_2 0 -1 0 2.535469267742879
+  translation -0.31509 0.236483 -0.00192193
+  rotation -0.003289712501154178 -0.0030033204574621123 -0.9999900788797306 1.4279165739065078
+  controller "qlearning_controller"
+  groundSensorsSlot [
+    DistanceSensor {
+    }
+  ]
+}
